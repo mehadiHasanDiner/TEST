@@ -14,23 +14,32 @@
 
     </header>
 
-    <main class="bg-cyan-200 px-8 py-8 mx-8 my-8 rounded-2xl shadow-lg">
-        <div>
-            <h3 class="text-center font-bold text-3xl mb-8">Set Timeout & Set Interval Project</h3>
-            <h1 class="text-center font-bold text-8xl text-blue-500"><span id="display-number">0</span></h1>
-        </div>
-        <div class="grid grid-col md:grid-cols-3 gap-8 place-items-center mt-8">
+    <main>
+        <section class="bg-cyan-200 px-8 py-8 mx-8 my-8 rounded-2xl shadow-lg">
             <div>
-                <button onclick="startCount()" class="btn btn-secondary px-8">Start</button>
+                <h3 class="text-center font-bold text-3xl mb-8">Set Timeout & Set Interval Project</h3>
+                <h1 class="text-center font-bold text-8xl text-blue-500"><span id="display-number">0</span></h1>
             </div>
-            <div>
-                <button id="stop-count" class="btn btn-secondary px-8">Stop</button>
+            <div class="grid grid-col md:grid-cols-3 gap-8 place-items-center mt-8">
+                <div>
+                    <button onclick="startCount()" class="btn btn-secondary px-8">Start</button>
+                </div>
+                <div>
+                    <button id="stop-count" class="btn btn-secondary px-8">Stop</button>
+                </div>
+                <div>
+                    <button id="rest-count" class="btn btn-secondary px-8">Reset</button>
+                </div>
             </div>
-            <div>
-                <button id="rest-count" class="btn btn-secondary px-8">Reset</button>
+        </section>
+        <section id="slider">
+            <div class="my-8 ">
+                <img id="slider-img" class="mx-auto rounded-2xl border-8 border-double border-sky-500" src="img/1.jpg"
+                    alt="">
             </div>
-        </div>
+        </section>
     </main>
+
     <!-- script -->
     <script src="timout-interval.js"></script>
 </body>
