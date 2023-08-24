@@ -1,22 +1,20 @@
 const displayedNumber = document.getElementById("display-number");
 let numberToShow = parseInt(displayedNumber.innerText);
 
-// const operatorFunction = () => {
-//   const intervalId = setInterval(() => {
-//     displayedNumber.innerText = numberToShow++;
-//   }, 1000);
-//   stopCount(intervalId);
-// };
-
 const startCount = () => {
   const intervalId = setInterval(() => {
     displayedNumber.innerText = numberToShow++;
   }, 1000);
-  stopCount(intervalId);
+  document.getElementById("stop-count").addEventListener("click", () => {
+    clearInterval(intervalId);
+  });
+
+  document.getElementById("rest-count").addEventListener("click", () => {
+    clearInterval(intervalId);
+    displayedNumber.innerText = 0;
+  });
 };
 
-const stopCount = (id) => {
-  clearInterval(id);
-};
-
-startCount();
+// const resetCount = () => {
+//   displayedNumber.innerText = parseInt(0);
+// };
