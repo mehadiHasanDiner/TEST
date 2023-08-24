@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout & Set Interval Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="bg-cyan-200 px-8 py-8 mx-8 my-8 rounded-2xl shadow-lg">
+        <div>
+            <h3 class="text-center font-bold text-3xl mb-8">Set Timeout & Set Interval Project</h3>
+            <h1 class="text-center font-bold text-8xl text-blue-500"><span id="display-number">0</span></h1>
+        </div>
+        <div class="grid grid-col md:grid-cols-3 gap-8 place-items-center mt-8">
+            <div>
+                <button onclick="startCount()" class="btn btn-secondary px-8">Start</button>
+            </div>
+            <div>
+                <button onclick="stopCount()" class="btn btn-secondary px-8">Stop</button>
+            </div>
+            <div>
+                <button onclick="resetCount()" class="btn btn-secondary px-8">Reset</button>
+            </div>
+        </div>
+    </main>
+    <!-- script -->
+    <script src="timout-interval.js"></script>
+</body>
+
+</html>
