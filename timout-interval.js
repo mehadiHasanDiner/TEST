@@ -39,7 +39,7 @@ setInterval(() => {
     imgIndex = 0;
   }
   const imgUrl = images[imgIndex];
-  console.log(imgUrl);
+  // console.log(imgUrl);
   imgElement.setAttribute("src", imgUrl);
   ++imgIndex;
 }, 1000);
